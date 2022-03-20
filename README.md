@@ -1,9 +1,9 @@
 # Antlr4Templates
 
-This directory contains code for Antlr templates for C# .NET. The template
-contains a grammar for expressions,
+This package is a third-party set of templates for generating Antlr4 C# programs.
+The template contains a grammar for expressions,
 code to print out the Antlr parse trees and token stream.
-You will need to install Dotnet.
+You will need to install NET 6.
 
 ## To install:
 
