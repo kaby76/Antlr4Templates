@@ -21,3 +21,8 @@ You will need to install Dotnet.
 ## To uninstall:
 
     dotnet new -u Antlr4Templates
+
+## Alternative generator
+
+If you are interested in generating a parser for a target other than
+C#, use [trgen](https://github.com/kaby76/Domemtech.Trash/tree/main/trgen).
