@@ -36,5 +36,6 @@ generated .csproj file.
 
 ## Alternative generator
 
-If you are interested in generating a parser for a target other than
-CSharp, use [trgen](https://github.com/kaby76/Domemtech.Trash/tree/main/trgen).
+If you are interested in generating a parser from a grammar,
+or for a target other than CSharp,
+use [trgen](https://github.com/kaby76/Domemtech.Trash/tree/main/trgen).
