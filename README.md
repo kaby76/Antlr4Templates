@@ -1,9 +1,14 @@
 # Antlr4Templates
 
 This package is a third-party set of templates for generating Antlr4 C# programs.
-The template contains a grammar for expressions, a simple console program for parsing input,
-and code to print out the Antlr parse tree and token stream.
-You will need to install NET 6.
+A generated program contains:
+* a grammar for expressions.
+* a simple console program for parsing input.
+
+To use this package, you will need to install NET 6.
+Older versions are supported if
+you modify the `<TargetFramework>` element in the
+generated .csproj file.
 
 ## To install:
 
@@ -17,6 +22,13 @@ You will need to install NET 6.
     dotnet restore
     dotnet build
     dotnet run
+
+## Available templates
+
+* `antlr`: a simple console program with a unified Antlr4 grammar.
+* `split-antlr`: a simple console program with a split Antlr4 grammar.
+* `antlr4cs`: a simple console program with a unified Antlr4 grammar using the Antlr4cs fork.
+* `split-antlr4cs`: a simple console program with a split Antlr4 grammar using the Antlr4cs fork.
 
 ## To uninstall:
 
