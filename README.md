@@ -25,10 +25,10 @@ generated .csproj file.
 
 ## Available templates
 
-* `antlr`: a simple console program with a unified Antlr4 grammar.
-* `split-antlr`: a simple console program with a split Antlr4 grammar.
+* `antlr4`: a simple console program with a unified Antlr4 grammar.
+* `antlr4-split`: a simple console program with a split Antlr4 grammar.
 * `antlr4cs`: a simple console program with a unified Antlr4 grammar using the Antlr4cs fork.
-* `split-antlr4cs`: a simple console program with a split Antlr4 grammar using the Antlr4cs fork.
+* `antlr4cs-split`: a simple console program with a split Antlr4 grammar using the Antlr4cs fork.
 
 ## To uninstall:
 
