@@ -7,7 +7,9 @@
   </PropertyGroup>
   
   <ItemGroup>
-    <Antlr4 Include="Arithmetic.g4" />
+    <Antlr4 Include="Arithmetic.g4">
+      <CustomToolNamespace>TemplateNamespace</CustomToolNamespace>
+    </Antlr4>
   </ItemGroup>
 
   <ItemGroup>

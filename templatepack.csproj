@@ -2,8 +2,8 @@
 
   <PropertyGroup>
     <PackageType>Template</PackageType>
-    <PackageVersion>1.1</PackageVersion>
-    <Version>1.1</Version>
+    <PackageVersion>1.2</PackageVersion>
+    <Version>1.2</Version>
     <PackageId>Antlr4Templates</PackageId>
     <Title>Antlr4 templates</Title>
     <Authors>Ken Domino</Authors>

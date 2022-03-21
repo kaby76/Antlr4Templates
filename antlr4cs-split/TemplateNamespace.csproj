@@ -7,8 +7,12 @@
   </PropertyGroup>
   
   <ItemGroup>
-    <Antlr4 Include="ArithmeticLexer.g4" />
-    <Antlr4 Include="ArithmeticParser.g4" />
+    <Antlr4 Include="ArithmeticLexer.g4">
+      <CustomToolNamespace>TemplateNamespace</CustomToolNamespace>
+    </Antlr4>
+    <Antlr4 Include="ArithmeticParser.g4">
+      <CustomToolNamespace>TemplateNamespace</CustomToolNamespace>
+    </Antlr4>
   </ItemGroup>
 
   <ItemGroup>

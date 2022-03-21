@@ -30,6 +30,11 @@ generated .csproj file.
 * `antlr4cs`: a simple console program with a unified Antlr4 grammar using the Antlr4cs fork.
 * `antlr4cs-split`: a simple console program with a split Antlr4 grammar using the Antlr4cs fork.
 
+___NB: Antlr4cs is an obsolete fork of the "official" Antlr4 tool and runtime for CSharp.
+The fork has numerous bugs in the build rules and the generated code
+does not have a lexer error listener override.
+It is supported here only as a convenience.___
+
 ## To uninstall:
 
     dotnet new -u Antlr4Templates
