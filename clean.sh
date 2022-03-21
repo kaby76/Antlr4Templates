@@ -20,4 +20,7 @@ fi
 echo "$machine"
 echo "$cwd"
 
-dotnet new -u "$cwd/console"
+dotnet new -u "$cwd/antlr4-combined"
+dotnet new -u "$cwd/antlr4-split"
+dotnet new -u "$cwd/antlr4cs-combined"
+dotnet new -u "$cwd/antlr4cs-split"

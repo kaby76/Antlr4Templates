@@ -2,11 +2,12 @@
 
   <PropertyGroup>
     <PackageType>Template</PackageType>
-    <PackageVersion>1.0</PackageVersion>
+    <PackageVersion>1.1</PackageVersion>
+    <Version>1.1</Version>
     <PackageId>Antlr4Templates</PackageId>
     <Title>Antlr4 templates</Title>
     <Authors>Ken Domino</Authors>
-    <Description>Templates to use when creating an Antlr application.</Description>
+    <Description>Templates for creating an Antlr application.</Description>
     <PackageTags>dotnet-new;templates;antlr</PackageTags>
 	  <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/kaby76/Antlr4Templates</PackageProjectUrl>
@@ -14,12 +15,14 @@
     <IncludeContentInPack>true</IncludeContentInPack>
     <IncludeBuildOutput>false</IncludeBuildOutput>
     <ContentTargetFolders>content</ContentTargetFolders>
-    <Version>1.0</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="console\**\*" Exclude="console\bin\**;console\obj\**" />
+    <Content Include="antlr4-combined\**\*" Exclude="antlr4-combined\bin\**;antlr4-combined\obj\**" />
+    <Content Include="antlr4-split\**\*" Exclude="antlr4-split\bin\**;antlr4-split\obj\**" />
+    <Content Include="antlr4cs-combined\**\*" Exclude="antlr4cs-combined\bin\**;antlr4cs-combined\obj\**" />
+    <Content Include="antlr4cs-split\**\*" Exclude="antlr4cs-split\bin\**;antlr4cs-split\obj\**" />
     <Compile Remove="**\*" />
   </ItemGroup>
 
