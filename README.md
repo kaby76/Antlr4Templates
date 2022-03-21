@@ -30,8 +30,12 @@ generated .csproj file.
 * `antlr4cs`: a simple console program with a unified Antlr4 grammar using the Antlr4cs fork.
 * `antlr4cs-split`: a simple console program with a split Antlr4 grammar using the Antlr4cs fork.
 
-NB: Antlr4cs is an obsolete fork of the "official" Antlr4 tool and runtime for CSharp.
-The fork has numerous problems:
+NB: Antlr4cs (in nuget
+[here](https://www.nuget.org/packages/Antlr4/),
+[here](https://www.nuget.org/packages/Antlr4.Runtime/),
+and [here](https://www.nuget.org/packages/Antlr4.CodeGenerator/);
+source [here](https://github.com/tunnelvisionlabs/antlr4cs)) is an obsolete fork of the "official" Antlr4 tool and runtime for CSharp.
+The Antlr4cs fork has many problems, and it is not being maintained:
 
 * Build rule problems
     * CSC : warning CS2002: Source file 'C:\msys64\home\Kenne\te\obj\Debug\net6.0\ArithmeticBaseVisitor.cs' specified multiple times [C:\msys64\home\Kenne\te\te.csproj]
