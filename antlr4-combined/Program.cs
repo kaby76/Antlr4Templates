@@ -1,4 +1,4 @@
-﻿// Template generated code from Antlr4Templates v1.1
+﻿// Template generated code from Antlr4Templates v1.3
 namespace TemplateNamespace
 {
     using Antlr4.Runtime;
@@ -20,10 +20,12 @@ namespace TemplateNamespace
             var lexer = new ArithmeticLexer(str);
             var tokens = new CommonTokenStream(lexer);
             var parser = new ArithmeticParser(tokens);
-            var listener_parser = new ErrorListener();
+            var listener_lexer = new ErrorListener<int>();
+            var listener_parser = new ErrorListener<IToken>();
+            lexer.AddErrorListener(listener_lexer);
             parser.AddErrorListener(listener_parser);
             var tree = parser.file();
-            if (listener_parser.had_error)
+            if (listener_lexer.had_error || listener_parser.had_error)
                 System.Console.WriteLine("error in parse.");
             else
                 System.Console.WriteLine("parse completed.");
