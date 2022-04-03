@@ -1,11 +1,11 @@
 {
   "author": "Ken Domino",
   "classifications": [ "Common/Console" ],
-  "name": "Antlr4 Console App",
-  "identity": "Antlr4Combined", // Unique name for this template
-  "shortName": "antlr4", // Short name that can be used on the cli
+  "name": "Antlr4 Java Combined Console App",
+  "identity": "java-combined", // Unique name for this template
+  "shortName": "java-combined", // Short name that can be used on the cli
   "tags": {
-    "language": "C#" // Specify that this template is in C#.
+    "language": "Java" // Specify that this template is in Java.
   },
   "sourceName": "TemplateNamespace",
   "preferNameDirectory": "true",

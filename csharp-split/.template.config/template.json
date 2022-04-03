@@ -1,9 +1,9 @@
 {
   "author": "Ken Domino",
   "classifications": [ "Common/Console" ],
-  "name": "Split Antlr4cs Console App",
-  "identity": "antlr4cs-split", // Unique name for this template
-  "shortName": "antlr4cs-split", // Short name that can be used on the cli
+  "name": "Split Antlr4 Console App",
+  "identity": "csharp-split", // Unique name for this template
+  "shortName": "csharp-split", // Short name that can be used on the cli
   "tags": {
     "language": "C#" // Specify that this template is in C#.
   },

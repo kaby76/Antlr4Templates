@@ -2,8 +2,8 @@
   "author": "Ken Domino",
   "classifications": [ "Common/Console" ],
   "name": "Antlr4cs Console App",
-  "identity": "Antlr4csCombined", // Unique name for this template
-  "shortName": "antlr4cs", // Short name that can be used on the cli
+  "identity": "antlr4cs-combined", // Unique name for this template
+  "shortName": "antlr4cs-combined", // Short name that can be used on the cli
   "tags": {
     "language": "C#" // Specify that this template is in C#.
   },

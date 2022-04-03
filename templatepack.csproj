@@ -9,7 +9,7 @@
     <Authors>Ken Domino</Authors>
     <Description>Templates for creating an Antlr application.</Description>
     <PackageTags>dotnet-new;templates;antlr</PackageTags>
-	  <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/kaby76/Antlr4Templates</PackageProjectUrl>
     <TargetFramework>net6.0</TargetFramework>
     <IncludeContentInPack>true</IncludeContentInPack>
@@ -19,10 +19,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="antlr4-combined\**\*" Exclude="antlr4-combined\bin\**;antlr4-combined\obj\**" />
-    <Content Include="antlr4-split\**\*" Exclude="antlr4-split\bin\**;antlr4-split\obj\**" />
+    <Content Include="csharp-combined\**\*" Exclude="csharp-combined\bin\**;csharp-combined\obj\**" />
+    <Content Include="csharp-split\**\*" Exclude="csharp-split\bin\**;csharp-split\obj\**" />
     <Content Include="antlr4cs-combined\**\*" Exclude="antlr4cs-combined\bin\**;antlr4cs-combined\obj\**" />
     <Content Include="antlr4cs-split\**\*" Exclude="antlr4cs-split\bin\**;antlr4cs-split\obj\**" />
+    <Content Include="java-combined\**\*" Exclude="java-combined\bin\**;java-combined\obj\**" />
+    <Content Include="java-split\**\*" Exclude="java-split\bin\**;java-split\obj\**" />
     <Compile Remove="**\*" />
   </ItemGroup>
 

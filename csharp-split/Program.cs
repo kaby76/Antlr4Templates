@@ -22,6 +22,8 @@ namespace TemplateNamespace
             var parser = new ArithmeticParser(tokens);
             var listener_lexer = new ErrorListener<int>();
             var listener_parser = new ErrorListener<IToken>();
+	    lexer.RemoveErrorListeners();
+	    parser.RemoveErrorListeners();
             lexer.AddErrorListener(listener_lexer);
             parser.AddErrorListener(listener_parser);
             var tree = parser.file();

@@ -25,8 +25,8 @@ generated .csproj file.
 
 ## Available templates
 
-* `antlr4`: a simple console program with a unified Antlr4 grammar.
-* `antlr4-split`: a simple console program with a split Antlr4 grammar.
+* `csharp`: a simple console program with a unified Antlr4 grammar.
+* `csharp-split`: a simple console program with a split Antlr4 grammar.
 * `antlr4cs`: a simple console program with a unified Antlr4 grammar using the Antlr4cs fork.
 * `antlr4cs-split`: a simple console program with a split Antlr4 grammar using the Antlr4cs fork.
 

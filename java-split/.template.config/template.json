@@ -1,11 +1,11 @@
 {
   "author": "Ken Domino",
   "classifications": [ "Common/Console" ],
-  "name": "Split Antlr4 Console App",
-  "identity": "Antlr4Split", // Unique name for this template
-  "shortName": "antlr4-split", // Short name that can be used on the cli
+  "name": "Antlr4 Java Split Console App",
+  "identity": "java-split", // Unique name for this template
+  "shortName": "java-split", // Short name that can be used on the cli
   "tags": {
-    "language": "C#" // Specify that this template is in C#.
+    "language": "Java" // Specify that this template is in Java.
   },
   "sourceName": "TemplateNamespace",
   "preferNameDirectory": "true",

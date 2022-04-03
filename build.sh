@@ -21,7 +21,9 @@ fi
 echo "$machine"
 echo "$cwd"
 
-dotnet new -i "$cwd/antlr4-combined"
-dotnet new -i "$cwd/antlr4-split"
+dotnet new -i "$cwd/csharp-combined"
+dotnet new -i "$cwd/csharp-split"
 dotnet new -i "$cwd/antlr4cs-combined"
 dotnet new -i "$cwd/antlr4cs-split"
+dotnet new -i "$cwd/java-combined"
+dotnet new -i "$cwd/java-split"

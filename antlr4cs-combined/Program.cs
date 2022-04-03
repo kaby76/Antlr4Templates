@@ -20,6 +20,7 @@ namespace TemplateNamespace
             var lexer = new ArithmeticLexer(str);
             var tokens = new CommonTokenStream(lexer);
             var parser = new ArithmeticParser(tokens);
+	    parser.RemoveErrorListeners();
             var listener_parser = new ErrorListener();
             parser.AddErrorListener(listener_parser);
             var tree = parser.file();
