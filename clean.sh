@@ -13,13 +13,14 @@ case "${unameOut}" in
 esac
 if [[ "$machine" == "MinGw" || "$machine" == "Msys" ]]
 then
-    cwd=`pwd | sed 's%/c%c:%' | sed 's%/%\\\\%g'`
+    cwd=`pwd`
+    cwd=`cygpath -m "$cwd"`
+    cwd=`echo $cwd | sed 's%^/c%c:%'`
 else
     cwd=`pwd`
 fi
 echo "$machine"
 echo "$cwd"
-
 dotnet new -u "$cwd/csharp-combined"
 dotnet new -u "$cwd/csharp-split"
 dotnet new -u "$cwd/antlr4cs-combined"
