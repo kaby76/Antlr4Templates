@@ -31,12 +31,7 @@ namespace TemplateNamespace
                 System.Console.WriteLine("error in parse.");
             else
                 System.Console.WriteLine("parse completed.");
-        }
-
-        static string ReadAllInput(string fn)
-        {
-            var input = System.IO.File.ReadAllText(fn);
-            return input;
+            System.Console.WriteLine(tree.ToStringTree(parser));
         }
     }
 }

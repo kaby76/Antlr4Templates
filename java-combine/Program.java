@@ -31,5 +31,6 @@ public class Program
             System.out.println("error in parse.");
         else
             System.out.println("parse completed.");
+        System.out.println(tree.toStringTree(parser));
     }
 }

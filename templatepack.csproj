@@ -19,11 +19,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="csharp-combined\**\*" Exclude="csharp-combined\bin\**;csharp-combined\obj\**" />
+    <Content Include="csharp-combine\**\*" Exclude="csharp-combine\bin\**;csharp-combine\obj\**" />
     <Content Include="csharp-split\**\*" Exclude="csharp-split\bin\**;csharp-split\obj\**" />
-    <Content Include="antlr4cs-combined\**\*" Exclude="antlr4cs-combined\bin\**;antlr4cs-combined\obj\**" />
+    <Content Include="antlr4cs-combine\**\*" Exclude="antlr4cs-combine\bin\**;antlr4cs-combine\obj\**" />
     <Content Include="antlr4cs-split\**\*" Exclude="antlr4cs-split\bin\**;antlr4cs-split\obj\**" />
-    <Content Include="java-combined\**\*" Exclude="java-combined\bin\**;java-combined\obj\**" />
+    <Content Include="java-combine\**\*" Exclude="java-combine\bin\**;java-combine\obj\**" />
     <Content Include="java-split\**\*" Exclude="java-split\bin\**;java-split\obj\**" />
     <Compile Remove="**\*" />
   </ItemGroup>
