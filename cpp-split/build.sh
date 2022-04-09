@@ -1,7 +1,5 @@
 #!/bin/bash
 
-rm -rf bin obj
-
 unameOut="$(uname -s)"
 case "${unameOut}" in
     Linux*)     machine=Linux;;
@@ -21,11 +19,18 @@ else
 fi
 echo "$machine"
 echo "$cwd"
-dotnet new -u "$cwd/csharp-combine"
-dotnet new -u "$cwd/csharp-split"
-dotnet new -u "$cwd/antlr4cs-combine"
-dotnet new -u "$cwd/antlr4cs-split"
-dotnet new -u "$cwd/java-combine"
-dotnet new -u "$cwd/java-split"
-dotnet new -u "$cwd/cpp-combine"
-dotnet new -u "$cwd/cpp-split"
+
+case "${unameOut}" in
+    Linux*)     target="";;
+    Darwin*)    target="";;
+    CYGWIN*)    target="";;
+    MINGW*)     target="";;
+    MSYS_NT*)   target="";;
+esac
+
+rm -rf build
+mkdir build
+cd build
+cmake ..
+#cmake .. -G "$target"
+make

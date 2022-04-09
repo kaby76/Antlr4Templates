@@ -1,4 +1,4 @@
-# Template generated code from trgen 0.15.2
+# Template generated code from trgen 0.16.0
 
 cmake_minimum_required (VERSION 3.14)
 list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
@@ -19,18 +19,28 @@ include_directories(${ANTLR4_INCLUDE_DIRS} ${CMAKE_CURRENT_SOURCE_DIR}/)
 find_package(ANTLR REQUIRED)
 
 antlr_target(
-    Arithmetic
-    Arithmetic.g4
+    ArithmeticLexer
+    ArithmeticLexer.g4
+    LEXER
+    )
+antlr_target(
+    ArithmeticParser
+    ArithmeticParser.g4
+    PARSER
+    DEPENDS_ANTLR ArithmeticLexer
+    COMPILE_FLAGS -lib ${ANTLR_ArithmeticLexer_OUTPUT_DIR}
     )
 
-include_directories(${ANTLR4_INCLUDE_DIRS})
-include_directories(${ANTLR_Arithmetic_OUTPUT_DIR})
+include_directories(${ANTLR_ArithmeticLexer_OUTPUT_DIR})
+include_directories(${ANTLR_ArithmeticParser_OUTPUT_DIR})
 
 add_executable(Test
     Program.cpp
     ErrorListener.cpp
     ErrorListener.h
-${ANTLR_Arithmetic_CXX_OUTPUTS}
+${ANTLR_ArithmeticLexer_CXX_OUTPUTS}
+    ${ANTLR_ArithmeticParser_CXX_OUTPUTS}
     )
+
 
 target_link_libraries(Test antlr4_static)

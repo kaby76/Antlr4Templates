@@ -1,0 +1,18 @@
+{
+  "author": "Ken Domino",
+  "classifications": [ "Common/Console" ],
+  "name": "Antlr4 Cpp Console App",
+  "identity": "cpp-combine", // Unique name for this template
+  "shortName": "cpp-combine", // Short name that can be used on the cli
+  "tags": {
+    "language": "Cpp" 
+  },
+  "sourceName": "TemplateNamespace",
+  "preferNameDirectory": "true",
+  "symbols": {
+    "package": {
+      "type": "parameter",
+      "replaces": "TemplateNamespace"
+    }
+  }
+}
