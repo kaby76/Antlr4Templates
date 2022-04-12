@@ -14,7 +14,7 @@ then
     cwd=`pwd`
     cwd=`cygpath -m "$cwd"`
     cwd=`echo $cwd | sed 's%^/c%c:%'`
-else if [[ "$machine" == "UNKNOWN:${unameOut}" ]]
+elif [[ "$machine" == "UNKNOWN:${unameOut}" ]]
 then
     echo "$machine"
     echo "Cannot build because we do not know what the machine is."
@@ -26,3 +26,4 @@ echo "$machine"
 echo "$cwd"
 
 rm -rf build
+rm -rf /tmp/antlr4_runtime

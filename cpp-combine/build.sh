@@ -1,13 +1,25 @@
 #!/bin/bash
 
 unameOut="$(uname -s)"
+sed 's%c:/temp%/tmp%g' cmake/ExternalAntlr4Cpp.cmake > asdf; mv asdf cmake/ExternalAntlr4Cpp.cmake;
 case "${unameOut}" in
-    Linux*)     machine=Linux;;
-    Darwin*)    machine=Mac;;
-    CYGWIN*)    machine=Cygwin;;
-    MINGW*)     machine=MinGw;;
-    MSYS_NT*)   machine=Msys;;
-    *)          machine="UNKNOWN:${unameOut}"
+    Linux*)
+	machine=Linux;
+	;;	
+    Darwin*)
+	machine=Mac;
+	;;
+    CYGWIN*)
+	machine=Cygwin;
+	;;
+    MINGW*)
+	machine=MinGw;
+	;;
+    MSYS_NT*)
+	machine=Msys;
+	;;
+    *)
+	machine="UNKNOWN:${unameOut}"
 esac
 if [[ "$machine" == "MinGw" || "$machine" == "Msys" ]]
 then
@@ -19,18 +31,10 @@ else
 fi
 echo "$machine"
 echo "$cwd"
-
-case "${unameOut}" in
-    Linux*)     target="";;
-    Darwin*)    target="";;
-    CYGWIN*)    target="";;
-    MINGW*)     target="";;
-    MSYS_NT*)   target="";;
-esac
-
+target=""
+curl https://repo1.maven.org/maven2/org/antlr/antlr4/4.10/antlr4-4.10-complete.jar -o /tmp/antlr4-4.10-complete.jar
 rm -rf build
 mkdir build
 cd build
 cmake ..
-#cmake .. -G "$target"
 make

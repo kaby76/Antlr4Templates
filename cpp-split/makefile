@@ -1,7 +1,6 @@
-# Template generated code from trgen 0.15.2
 default:
-	rm -rf build; mkdir build; cd build; cmake .. -G "MSYS Makefiles"; $(MAKE)
+	bash build.sh
 run:
-	cd build; ./Test.exe
+	bash run.sh
 clean:
-	rm -rf build c:/temp/antlr4_runtime
+	bash clean.sh

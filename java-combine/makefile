@@ -1,5 +1,5 @@
 # Template generated code from Antlr4Templates v1.3
-JAR = antlr4-4.9.3-complete.jar
+JAR = antlr4-4.10-complete.jar
 CLASSPATH = $(JAR)\;.
 .SUFFIXES: .g4 .java .class
 .java.class:
@@ -7,9 +7,9 @@ CLASSPATH = $(JAR)\;.
 ANTLRGRAMMARS ?= $(wildcard *.g4)
 GENERATED = ArithmeticLexer.java ArithmeticParser.java
 SOURCES = $(GENERATED) Program.java ErrorListener.java
-default: antlr4-4.9.3-complete.jar classes
-antlr4-4.9.3-complete.jar:
-	curl https://repo1.maven.org/maven2/org/antlr/antlr4/4.9.3/antlr4-4.9.3-complete.jar -o ./antlr4-4.9.3-complete.jar
+default: antlr4-4.10-complete.jar classes
+antlr4-4.10-complete.jar:
+	curl https://repo1.maven.org/maven2/org/antlr/antlr4/4.10/antlr4-4.10-complete.jar -o ./antlr4-4.10-complete.jar
 classes: $(GENERATED) $(SOURCES:.java=.class)
 clean:
 	rm -f *.class

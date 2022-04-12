@@ -1,12 +1,11 @@
-# Template generated code from trgen 0.16.0
 
 cmake_minimum_required (VERSION 3.14)
 list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
 
 set(CMAKE_CXX_STANDARD 17)
-set(ANTLR_EXECUTABLE "C:/Users/Kenne/Downloads/antlr-4.9.3-complete.jar")
+set(ANTLR_EXECUTABLE "/tmp/antlr4-4.10-complete.jar")
 set(Java_JAVA_EXECUTABLE "java")
-set(ANTLR4_TAG e4c1a74)
+set(ANTLR4_TAG 3e3fecf)
 #SET(GCC_COVERAGE_COMPILE_FLAGS "-g -pg")
 #SET(GCC_COVERAGE_LINK_FLAGS    "-g -pg")
 #SET(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} ${GCC_COVERAGE_COMPILE_FLAGS}")

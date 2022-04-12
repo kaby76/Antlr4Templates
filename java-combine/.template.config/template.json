@@ -2,8 +2,8 @@
   "author": "Ken Domino",
   "classifications": [ "Common/Console" ],
   "name": "Antlr4 Java Combined Console App",
-  "identity": "java-combined", // Unique name for this template
-  "shortName": "java-combined", // Short name that can be used on the cli
+  "identity": "java-combine", // Unique name for this template
+  "shortName": "java-combine", // Short name that can be used on the cli
   "tags": {
     "language": "Java" // Specify that this template is in Java.
   },
