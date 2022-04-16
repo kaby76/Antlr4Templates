@@ -1,7 +1,7 @@
 {
   "author": "Ken Domino",
   "classifications": [ "Common/Console" ],
-  "name": "Antlr4 Console App",
+  "name": "Antlr4 combined C# console app",
   "identity": "csharp-combine", // Unique name for this template
   "shortName": "csharp-combine", // Short name that can be used on the cli
   "tags": {

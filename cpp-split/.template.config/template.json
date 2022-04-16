@@ -1,7 +1,7 @@
 {
   "author": "Ken Domino",
   "classifications": [ "Common/Console" ],
-  "name": "Antlr4 Cpp Console App",
+  "name": "Antlr4 splitted C++ console app",
   "identity": "cpp-split", // Unique name for this template
   "shortName": "cpp-split", // Short name that can be used on the cli
   "tags": {

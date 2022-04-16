@@ -1,7 +1,7 @@
 {
   "author": "Ken Domino",
   "classifications": [ "Common/Console" ],
-  "name": "Antlr4 Java Split Console App",
+  "name": "Antlr4 splitted Java console app",
   "identity": "java-split", // Unique name for this template
   "shortName": "java-split", // Short name that can be used on the cli
   "tags": {
