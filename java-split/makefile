@@ -1,4 +1,4 @@
-# Template generated code from Antlr4Templates v1.3
+# Template generated code from Antlr4Templates v2.2
 JAR = antlr4-4.10-complete.jar
 CLASSPATH = $(JAR)\;.
 .SUFFIXES: .g4 .java .class
