@@ -19,8 +19,6 @@ generated .csproj file.
     mkdir Foo
     cd Foo
     dotnet new csharp-combine
-    dotnet restore
-    dotnet build
     dotnet run
 
 ## Available templates
