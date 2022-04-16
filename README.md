@@ -18,17 +18,19 @@ generated .csproj file.
 
     mkdir Foo
     cd Foo
-    dotnet new antlr
+    dotnet new csharp-combine
     dotnet restore
     dotnet build
     dotnet run
 
 ## Available templates
 
-* `csharp`: a simple console program with a unified Antlr4 grammar.
+* `csharp-combine`: a simple console program with a unified Antlr4 grammar.
 * `csharp-split`: a simple console program with a split Antlr4 grammar.
-* `antlr4cs`: a simple console program with a unified Antlr4 grammar using the Antlr4cs fork.
+* `antlr4cs-combine`: a simple console program with a unified Antlr4 grammar using the Antlr4cs fork.
 * `antlr4cs-split`: a simple console program with a split Antlr4 grammar using the Antlr4cs fork.
+
+Templates also exist for Java and Cpp targets. To see the list, type `dotnet new --list | grep '[-]combine\|[-]split'` in Bash.
 
 NB: Antlr4cs (in nuget
 [here](https://www.nuget.org/packages/Antlr4/),
