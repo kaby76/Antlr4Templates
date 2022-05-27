@@ -1,6 +1,7 @@
 # Antlr4Templates
 
-This package is a third-party set of templates for generating Antlr4 C# programs.
+This package is a third-party set of templates for generating Antlr4
+programs using the Arithmetic.g4 grammar.
 A generated program contains:
 * a grammar for expressions.
 * a simple console program for parsing input.
@@ -23,12 +24,21 @@ generated .csproj file.
 
 ## Available templates
 
-* `csharp-combine`: a simple console program with a unified Antlr4 grammar.
-* `csharp-split`: a simple console program with a split Antlr4 grammar.
-* `antlr4cs-combine`: a simple console program with a unified Antlr4 grammar using the Antlr4cs fork.
-* `antlr4cs-split`: a simple console program with a split Antlr4 grammar using the Antlr4cs fork.
+* `csharp-combine`: unified Arithmetic grammar for C#.
+* `csharp-split`: split Arithmetic grammar for C#.
+* `antlr4cs-combine`: unified Arithmetic grammar for C# using the Antlr4cs fork.
+* `antlr4cs-split`: split Arithmetic grammar for C# using the Antlr4cs fork.
+* `cpp-combine`: unified Arithmetic grammar for C++.
+* `cpp-split`: split Arithmetic grammar for C++.
+* `java-combine`: unified Arithmetic grammar for Java.
+* `java-split`: split Arithmetic grammar for Java.
 
-Templates also exist for Java and Cpp targets. To see the list, type `dotnet new --list | grep '[-]combine\|[-]split'` in Bash.
+To see the complete list of templates, type `dotnet new --list | grep '[-]combine\|[-]split'` in Bash.
+
+These templates have been tested and work with MSYS2 for Windows 11 using NET6,
+and Linux. All apps are console programs that take no program arguments and output
+a parse for various strings, some that are not correct in order to demonstrate parse
+errors.
 
 NB: Antlr4cs (in nuget
 [here](https://www.nuget.org/packages/Antlr4/),
