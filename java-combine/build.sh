@@ -39,7 +39,7 @@ case "${unameOut}" in
 	sed -i "s%M2DIR%$userid/.m2%g" makefile
 	sed -i "s%JAVAEXE%$userid/.jre/jdk-11.0.15+10/bin/java.exe%g" makefile
 	sed -i "s%JAVACEXE%$userid/.jre/jdk-11.0.15+10/bin/javac.exe%g" makefile
-	sed -i "s%CONNECTOR%\\;%g" makefile
+	sed -i 's%CONNECTOR%\\;%g' makefile
 	cwd=`pwd`
 	cwd=`cygpath -m "$cwd"`
 	cwd=`echo $cwd | sed 's%^/c%c:%'`
@@ -56,7 +56,7 @@ case "${unameOut}" in
 	sed -i "s%M2DIR%$userid/.m2%g" makefile
 	sed -i "s%JAVAEXE%$userid/.jre/jdk-11.0.15+10/bin/java.exe%g" makefile
 	sed -i "s%JAVACEXE%$userid/.jre/jdk-11.0.15+10/bin/javac.exe%g" makefile
-	sed -i "s%CONNECTOR%\\;%g" makefile
+	sed -i 's%CONNECTOR%\\;%g' makefile
 	cwd=`pwd`
 	cwd=`cygpath -m "$cwd"`
 	cwd=`echo $cwd | sed 's%^/c%c:%'`
@@ -73,7 +73,7 @@ case "${unameOut}" in
 	sed -i "s%M2DIR%$userid/.m2%g" makefile
 	sed -i "s%JAVAEXE%$userid/.jre/jdk-11.0.15+10/bin/java.exe%g" makefile
 	sed -i "s%JAVACEXE%$userid/.jre/jdk-11.0.15+10/bin/javac.exe%g" makefile
-	sed -i "s%CONNECTOR%\\;%g" makefile
+	sed -i 's%CONNECTOR%\\;%g' makefile
 	cwd=`pwd`
 	cwd=`cygpath -m "$cwd"`
 	cwd=`echo $cwd | sed 's%^/c%c:%'`
