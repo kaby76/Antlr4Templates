@@ -32,7 +32,7 @@ fi
 echo "$machine"
 echo "$cwd"
 target=""
-curl https://repo1.maven.org/maven2/org/antlr/antlr4/4.10/antlr4-4.10-complete.jar -o /tmp/antlr4-4.10-complete.jar
+curl https://repo1.maven.org/maven2/org/antlr/antlr4/4.10.1/antlr4-4.10.1-complete.jar -o antlr4-4.10.1-complete.jar
 rm -rf build
 mkdir build
 cd build
