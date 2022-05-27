@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <PackageType>Template</PackageType>
-    <PackageVersion>2.3</PackageVersion>
+    <PackageVersion>2.4</PackageVersion>
     <Version>2.1</Version>
     <PackageId>Antlr4Templates</PackageId>
     <Title>Antlr4 templates</Title>
