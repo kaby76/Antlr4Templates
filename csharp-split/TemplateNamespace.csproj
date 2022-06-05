@@ -16,11 +16,7 @@
 
   <ItemGroup>
     <PackageReference Include="Antlr4.Runtime.Standard" Version="4.10.1" />
-    <PackageReference Include="Antlr4BuildTasks" Version="10.6" PrivateAssets="all" />
+    <PackageReference Include="Antlr4BuildTasks" Version="10.7" PrivateAssets="all" />
   </ItemGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <NoWarn>3021;1701;1702</NoWarn>
-  </PropertyGroup>
 
 </Project>

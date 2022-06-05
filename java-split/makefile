@@ -1,4 +1,4 @@
-# Template generated code from Antlr4Templates v2.4
+# Template generated code from Antlr4Templates v2.5
 JAR = M2DIR/antlr4-4.10.1-complete.jar
 CLASSPATH = $(JAR)CONNECTOR.
 .SUFFIXES: .g4 .java .class
