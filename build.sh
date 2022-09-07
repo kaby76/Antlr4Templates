@@ -18,14 +18,17 @@ then
 else
     cwd=`pwd`
 fi
-echo "$machine"
-echo "$cwd"
-
-dotnet new -i "$cwd/csharp-combine"
-dotnet new -i "$cwd/csharp-split"
-dotnet new -i "$cwd/antlr4cs-combine"
-dotnet new -i "$cwd/antlr4cs-split"
-dotnet new -i "$cwd/java-combine"
-dotnet new -i "$cwd/java-split"
-dotnet new -i "$cwd/cpp-combine"
-dotnet new -i "$cwd/cpp-split"
+list=`find . -maxdepth 1 -type d -name '*'`
+echo $list
+for i in $list
+do
+    j=$(basename $i)
+    case "$j" in
+        .*) continue;;
+	bin) continue;;
+	obj) continue;;
+        *) dotnet new -i "$cwd/$j";;
+    esac
+done
+dotnet new --list
+exit 0

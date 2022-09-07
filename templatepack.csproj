@@ -26,6 +26,7 @@
     <Content Include="java-split\**\*" Exclude="java-split\bin\**;java-split\obj\**" />
     <Content Include="cpp-combine\**\*" />
     <Content Include="cpp-split\**\*" />
+    <Content Include="hw\**\*" />
     <Compile Remove="**\*" />
   </ItemGroup>
 </Project>

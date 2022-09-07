@@ -1,7 +1,6 @@
 #!/bin/bash
 
 rm -rf bin obj
-
 unameOut="$(uname -s)"
 case "${unameOut}" in
     Linux*)     machine=Linux;;
@@ -19,13 +18,17 @@ then
 else
     cwd=`pwd`
 fi
-echo "$machine"
-echo "$cwd"
-dotnet new -u "$cwd/csharp-combine"
-dotnet new -u "$cwd/csharp-split"
-dotnet new -u "$cwd/antlr4cs-combine"
-dotnet new -u "$cwd/antlr4cs-split"
-dotnet new -u "$cwd/java-combine"
-dotnet new -u "$cwd/java-split"
-dotnet new -u "$cwd/cpp-combine"
-dotnet new -u "$cwd/cpp-split"
+list=`find . -maxdepth 1 -type d -name '*'`
+echo $list
+for i in $list
+do
+    j=$(basename $i)
+    case "$j" in
+        .*) continue;;
+		bin) continue;;
+		obj) continue;;
+        *) dotnet new -u "$cwd/$j";;
+    esac
+done
+dotnet new --list
+exit 0
