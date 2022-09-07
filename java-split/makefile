@@ -1,5 +1,5 @@
-# Template generated code from Antlr4Templates v2.6
-JAR = M2DIR/antlr4-4.10.1-complete.jar
+# Template generated code from Antlr4Templates v3.0
+JAR = M2DIR/antlr4-4.11.1-complete.jar
 CLASSPATH = $(JAR)CONNECTOR.
 .SUFFIXES: .g4 .java .class
 .java.class:
@@ -7,9 +7,9 @@ CLASSPATH = $(JAR)CONNECTOR.
 ANTLRGRAMMARS ?= $(wildcard *.g4)
 GENERATED = ArithmeticLexer.java ArithmeticParser.java
 SOURCES = $(GENERATED) Program.java ErrorListener.java
-default: M2DIR/antlr4-4.10.1-complete.jar classes
-M2DIR/antlr4-4.10.1-complete.jar:
-	cd M2DIR; wget https://repo1.maven.org/maven2/org/antlr/antlr4/4.10.1/antlr4-4.10.1-complete.jar
+default: M2DIR/antlr4-4.11.1-complete.jar classes
+M2DIR/antlr4-4.11.1-complete.jar:
+	cd M2DIR; wget https://repo1.maven.org/maven2/org/antlr/antlr4/4.11.1/antlr4-4.11.1-complete.jar
 classes: $(GENERATED) $(SOURCES:.java=.class)
 clean:
 	rm -f *.class
