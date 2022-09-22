@@ -1,4 +1,4 @@
-// Template generated code from Antlr4Templates v4.0
+// Template generated code from Antlr4Templates v5.0
 
 #include <iostream>
 #include <string>

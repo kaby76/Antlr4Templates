@@ -1,4 +1,4 @@
-// Template generated code from Antlr4Templates v4.0
+// Template generated code from Antlr4Templates v5.0
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import org.antlr.v4.runtime.*;
