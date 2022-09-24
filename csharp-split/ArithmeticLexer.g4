@@ -1,4 +1,4 @@
-﻿// Template generated code from Antlr4Templates v5.0
+﻿// Template generated code from Antlr4Templates v5.1
 
 lexer grammar ArithmeticLexer;
 
