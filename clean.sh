@@ -27,8 +27,8 @@ do
         .*) continue;;
 		bin) continue;;
 		obj) continue;;
-        *) dotnet new -u "$cwd/$j";;
+        *) dotnet new uninstall "$cwd/$j";;
     esac
 done
-dotnet new --list
+dotnet new list
 exit 0

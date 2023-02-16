@@ -27,8 +27,8 @@ do
         .*) continue;;
 	bin) continue;;
 	obj) continue;;
-        *) dotnet new -i "$cwd/$j";;
+        *) dotnet new install "$cwd/$j";;
     esac
 done
-dotnet new --list
+dotnet new list
 exit 0

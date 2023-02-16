@@ -1,8 +1,7 @@
-<!-- Template generated code from Antlr4Templates v 1.3 -->
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net7.0</TargetFramework>
     <RootNamespace>AntlrTemplate</RootNamespace>
   </PropertyGroup>
   

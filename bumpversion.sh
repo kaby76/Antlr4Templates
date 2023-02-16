@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Adjust version in the template package.
-version="5.1"
+version="6.0"
 files=`find . -name '*.csproj' | grep -v '[.]git/'`
 subset=`grep -l -e "<PackageVersion>" $files`
 for i in $subset

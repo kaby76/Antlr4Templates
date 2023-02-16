@@ -1,4 +1,4 @@
-﻿// Template generated code from Antlr4Templates v5.1
+﻿// Template generated code from Antlr4Templates v6.0
 
 grammar Arithmetic;
 
